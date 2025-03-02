@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Site</title>
+    <!-- Added link to daisyUi and tailwind  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-100 max-w-screen-2xl mx-auto pb-2">
+    <header class="py-4 w-11/12 mx-auto">
+      <nav
+        class="bg-white flex justify-between items-center px-6 py-4 rounded-xl"
+      >
+        <div class="flex items-center gap-2">
+          <figure>
+            <img src="./assets/logo.png" alt="logo" class="w-full" />
+          </figure>
+          <h3 class="text-4xl">Dev<span class="font-extrabold">Board</span></h3>
+        </div>
+        <div class="">
+          <button
+            class="bg-blue-500 px-4 py-2 rounded-xl text-white font-semibold"
+            id="backToDesk"
+          >
+            Back to desk
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main class="w-11/12 mx-auto my-8">
+      <h1 class="text-center text-4xl font-bold mb-5">Blogs</h1>
+      <section>
+        <div class="m-2">
+          <p class="text-2xl bg-white p-4 rounded-xl shadow-lg font-medium">
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </p>
+          <div class="bg-white p-4 rounded-xl shadow-lg mt-2">
+            <p class="text-lg mt-2 text-[#495057] font-medium">
+              There are several ways to select elements in the DOM using
+              Javascript . Some of the most common ways are:
+            </p>
+
+            <ul class="ml-8 text-[#868e96]">
+              <li>getElementById()</li>
+              <li>getElementsByClassName()</li>
+              <li>getElementsByTagName()</li>
+              <li>querySelector()</li>
+              <li>querySelectorAll()</li>
+            </ul>
+          </div>
+        </div>
+        <div class="m-2">
+          <p class="text-2xl bg-white p-4 rounded-xl shadow-lg font-medium">
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent ?
+          </p>
+          <div class="bg-white p-4 rounded-xl shadow-lg mt-2">
+            <p class="text-lg mt-2 text-[#495057] font-medium">
+              Difference Between innerHTML, innerText, and textContent in Dom is
+              as follows:
+            </p>
+
+            <ul class="ml-8 text-[#868e96]">
+              <li>
+                innerHTML: It returns the HTML content (inner HTML) of an
+                element.
+              </li>
+              <li>
+                innerText: It returns the text content of the specified node,
+                and all its descendants.
+              </li>
+              <li>
+                textContent: It returns the text content of the specified node,
+                and all its descendants.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="m-2">
+          <p class="text-2xl bg-white p-4 rounded-xl shadow-lg font-medium">
+            Question-3: What is event delegation in the DOM?
+          </p>
+          <div class="bg-white p-4 rounded-xl shadow-lg mt-2">
+            <p class="text-lg mt-2 text-[#868e96] font-medium">
+              Event delegation is a technique in JavaScript where you attach a
+              single event listener to a parent element instead of each child
+              element. The event listener listens for events on the parent and
+              uses event bubbling to catch events triggered by child elements.
+            </p>
+          </div>
+        </div>
+        <div class="m-2">
+          <p class="text-2xl bg-white p-4 rounded-xl shadow-lg font-medium">
+            Question-4: What is event bubbling in the DOM?
+          </p>
+          <div class="bg-white p-4 rounded-xl shadow-lg mt-2">
+            <p class="text-lg mt-2 text-[#868e96] font-medium">
+              Event bubbling is a mechanism in the DOM where an event triggered
+              on a child element bubbles up to its parent and then to higher
+              ancestors, eventually reaching the document object. This allows
+              you to listen for events on a parent element instead of having to
+              add an event listener to each child element.
+            </p>
+          </div>
+        </div>
+        <div class="m-2">
+          <p class="text-2xl bg-white p-4 rounded-xl shadow-lg font-medium">
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
+          </p>
+          <div class="bg-white p-4 rounded-xl shadow-lg mt-2">
+            <p class="text-lg mt-2 text-[#495057] font-medium">
+              There are several ways to Creating, Adding, and Removing Elements
+              in JavaScript. Some of the most common ways are:
+            </p>
+
+            <ul class="ml-8 text-[#868e96]">
+              <li>createElement()</li>
+              <li>appendChild()</li>
+              <li>append()</li>
+              <li>prepend()</li>
+              <li>removeChild()</li>
+              <li>remove()</li>
+              <li>replaceChild()</li>
+              <li>createTextNode()</li>
+              <li>insertBefore()</li>
+              <li>cloneNode()</li>
+              <li>createDocumentFragment()</li>
+              <li>insertAdjacentHTML()</li>
+              <li>insertAdjacentElement()</li>
+              <li>insertAdjacentText()</li>
+              <li>before()</li>
+              <li>after()</li>
+              <li>replaceWith()</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="blog.js"></script>
+  </body>
+</html>
