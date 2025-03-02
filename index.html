@@ -25,88 +25,107 @@
       }
     </style>
   </head>
-  <body class="bg-gray-100 max-w-screen-2xl mx-auto p-4">
-    <header>
-      <nav class="flex justify-between items-center bg-white p-2">
+  <body class="bg-gray-100 max-w-screen-2xl mx-auto py-2">
+    <header class="w-11/12 mx-auto">
+      <nav class="flex justify-between items-center bg-white p-2 rounded-xl">
         <div class="flex items-center gap-2">
-          <figure>
+          <figure class="">
             <img src="./assets/logo.png" alt="logo" class="w-full" />
           </figure>
-          <h3 class="text-4xl">Dev<span class="font-extrabold">Board</span></h3>
+          <h3 class="text-xl lg:text-4xl">
+            Dev<span class="font-extrabold">Board</span>
+          </h3>
         </div>
         <div class="flex items-center gap-5 p-2">
           <div class="flex items-center gap-2">
             <figure>
               <img src="./assets/checkbox.png" alt="checkbox" />
             </figure>
-            <p class="text-3xl" id="total-task">23</p>
+            <p class="text-xl lg:text-3xl" id="total-task">23</p>
           </div>
           <figure>
-            <img src="./assets/theme-btn.png" alt="theme btn" id="themeBtn" />
+            <img
+              src="./assets/theme-btn.png"
+              alt="theme btn"
+              id="themeBtn"
+              class="w-7/12"
+            />
           </figure>
         </div>
       </nav>
     </header>
-    <main class="">
+    <main class="w-11/12 mx-auto">
       <section class="grid grid-cols-8 my-4 gap-4 p-2">
-        <section class="col-span-6 bg-white rounded-xl">
-          <section class="grid grid-cols-4 mr-2 p-2">
+        <section class="col-span-5 lg:col-span-6 bg-white rounded-xl">
+          <section
+            class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-2 gap-2"
+          >
             <div
-              class="flex items-center justify-center gap-4 bg-gray-100 ml-2 rounded-xl p-2"
+              class="flex items-center justify-center gap-4 bg-gray-100 rounded-xl p-2"
             >
               <figure>
                 <img src="./assets/checkbox.png" alt="checkbox" />
               </figure>
               <div class="">
                 <p>Task Assigned</p>
-                <h4 class="text-4xl font-bold" id="task">06</h4>
+                <h4 class="text-xl lg:text-4xl font-bold" id="task">06</h4>
               </div>
             </div>
             <div
-              class="flex items-center justify-center col-span-2 gap-4 bg-blue-600 ml-2 rounded-xl p-2 text-white"
+              class="flex items-center justify-center lg:col-span-2 gap-4 bg-blue-600 rounded-xl p-2 text-white"
               id="discoverBtn"
             >
               <figure>
-                <img src="./assets/board.png" alt="board" />
+                <img src="./assets/board.png" alt="board" class="w-full" />
               </figure>
-              <p class="text-2xl">
+              <p class="text-base lg:text-2xl">
                 Discover Something <br />
                 New Today !
               </p>
             </div>
             <div
-              class="flex items-center justify-center gap-4 bg-gray-100 ml-2 rounded-xl p-2"
+              class="flex items-center justify-center gap-4 bg-gray-100 rounded-xl p-2"
             >
               <figure>
                 <img src="./assets/calender.png" alt="calender" />
               </figure>
-              <div class="text-2xl" id="">
-                <p id="dayName">Wed,</p>
-                <p class="font-bold" id="localFullDate">Jul 28 2025</p>
+              <div class="text-lg lg:text-2xl" id="">
+                <p id="dayName"></p>
+                <p class="font-bold" id="localFullDate"></p>
               </div>
             </div>
           </section>
-          <section class="grid grid-cols-3 gap-4 p-2 m-4">
+          <section
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-2 m-4 text-[#495057]"
+          >
             <div
               class="bg-gray-100 p-4 rounded-xl flex flex-col gap-4 items-start justify-center"
             >
-              <button class="bg-white px-4 py-2 rounded-xl">ShopEase</button>
+              <button
+                class="bg-white font-medium px-2 py-1 lg:px-4 lg:py-2 rounded-xl"
+              >
+                ShopEase
+              </button>
 
-              <h3 class="text-2xl font-bold" id="task-title">
+              <h3 class="text-lg lg:text-2xl font-bold" id="task-title">
                 Fix Mobile Button Issue
               </h3>
-              <p class="text-gray-500 p-4 bg-white rounded-xl">
+              <p
+                class="text-gray-500 text-sm lg:text-base p-2 lg:p-4 bg-white rounded-xl"
+              >
                 Debug using Chrome DevTools, check for overlapping elements, and
                 ensure onClick works properly and ensure onClick works properly
               </p>
-              <div class="flex justify-between items-center gap-4 w-full">
+              <div
+                class="flex justify-between items-center gap-2 lg:gap-4 w-full"
+              >
                 <div class="">
-                  <p>Deadline</p>
-                  <p class="font-medium">21 March 2025</p>
+                  <p class="text-sm lg:text-base">Deadline</p>
+                  <p class="text-sm lg:text-base font-medium">21 March 2025</p>
                 </div>
                 <div>
                   <button
-                    class="bg-blue-500 px-2 py-1 rounded-xl text-white collect-btn"
+                    class="bg-blue-500 px-2 py-1 rounded-xl text-white collect-btn text-sm lg:text-base"
                   >
                     Completed
                   </button>
@@ -116,21 +135,29 @@
             <div
               class="bg-gray-100 p-4 rounded-xl flex flex-col gap-4 items-start justify-center"
             >
-              <button class="bg-white px-4 py-2 rounded-xl">CloudSync</button>
+              <button
+                class="bg-white font-medium px-2 py-1 lg:px-4 lg:py-2 rounded-xl"
+              >
+                CloudSync
+              </button>
 
-              <h3 class="text-2xl font-bold" id="task-title">Add Dark Mode</h3>
-              <p class="text-gray-500 p-4 bg-white rounded-xl">
+              <h3 class="text-lg lg:text-2xl font-bold" id="task-title">
+                Add Dark Mode
+              </h3>
+              <p
+                class="text-gray-500 text-sm lg:text-base p-2 lg:p-4 bg-white rounded-xl"
+              >
                 Store the user's preference in localStorage, update CSS
                 variables dynamically, and apply a smooth transition effect.
               </p>
               <div class="flex justify-between items-center gap-4 w-full">
                 <div class="">
-                  <p>Deadline</p>
-                  <p class="font-medium">21 March 2025</p>
+                  <p class="text-sm lg:text-base">Deadline</p>
+                  <p class="font-medium text-sm lg:text-base">21 March 2025</p>
                 </div>
                 <div>
                   <button
-                    class="bg-blue-500 px-2 py-1 rounded-xl text-white collect-btn"
+                    class="bg-blue-500 px-2 py-1 rounded-xl text-white collect-btn text-sm lg:text-base"
                   >
                     Completed
                   </button>
@@ -140,23 +167,29 @@
             <div
               class="bg-gray-100 p-4 rounded-xl flex flex-col gap-4 items-start justify-center"
             >
-              <button class="bg-white px-4 py-2 rounded-xl">SwiftPay</button>
+              <button
+                class="bg-white font-medium px-2 py-1 lg:px-4 lg:py-2rounded-xl"
+              >
+                SwiftPay
+              </button>
 
-              <h3 class="text-2xl font-bold" id="task-title">
+              <h3 class="text-lg lg:text-2xl font-bold" id="task-title">
                 Optimize Home page 
               </h3>
-              <p class="text-gray-500 p-4 bg-white rounded-xl">
+              <p
+                class="text-gray-500 text-sm lg:text-base p-2 lg:p-4 bg-white rounded-xl"
+              >
                 Debug using Chrome DevTools, check for overlapping elements, and
                 ensure onClick works properly and ensure onClick works properly
               </p>
               <div class="flex justify-between items-center gap-4 w-full">
                 <div class="">
-                  <p>Deadline</p>
-                  <p class="font-medium">21 March 2025</p>
+                  <p class="text-sm lg:text-base">Deadline</p>
+                  <p class="font-medium text-sm lg:text-base">21 March 2025</p>
                 </div>
                 <div>
                   <button
-                    class="bg-blue-500 px-2 py-1 rounded-xl text-white collect-btn"
+                    class="bg-blue-500 px-2 py-1 rounded-xl text-white collect-btn text-sm lg:text-base"
                   >
                     Completed
                   </button>
@@ -166,23 +199,29 @@
             <div
               class="bg-gray-100 p-4 rounded-xl flex flex-col gap-4 items-start justify-center"
             >
-              <button class="bg-white px-4 py-2 rounded-xl">Meta</button>
+              <button
+                class="bg-white font-medium px-2 py-1 lg:px-4 lg:py-2 rounded-xl"
+              >
+                Meta
+              </button>
 
-              <h3 class="text-2xl font-bold" id="task-title">
+              <h3 class="text-lg lg:text-2xl font-bold" id="task-title">
                 Add new emoji 🤲
               </h3>
-              <p class="text-gray-500 p-4 bg-white rounded-xl">
+              <p
+                class="text-gray-500 text-sm lg:text-base p-2 lg:p-4 bg-white rounded-xl"
+              >
                 Debug using Chrome DevTools, check for overlapping elements, and
                 ensure onClick works properly and ensure onClick works properly
               </p>
               <div class="flex justify-between items-center gap-4 w-full">
                 <div class="">
-                  <p>Deadline</p>
-                  <p class="font-medium">21 March 2025</p>
+                  <p class="text-sm lg:text-base">Deadline</p>
+                  <p class="font-medium text-sm lg:text-base">21 March 2025</p>
                 </div>
                 <div>
                   <button
-                    class="bg-blue-500 px-2 py-1 rounded-xl text-white collect-btn"
+                    class="bg-blue-500 px-2 py-1 rounded-xl text-white collect-btn text-sm lg:text-base"
                   >
                     Completed
                   </button>
@@ -192,23 +231,29 @@
             <div
               class="bg-gray-100 p-4 rounded-xl flex flex-col gap-4 items-start justify-center"
             >
-              <button class="bg-white px-4 py-2 rounded-xl">Google LLC</button>
+              <button
+                class="bg-white font-medium px-2 py-1 lg:px-4 lg:py-2 rounded-xl"
+              >
+                Google LLC
+              </button>
 
-              <h3 class="text-2xl font-bold" id="task-title">
+              <h3 class="text-lg lg:text-2xl font-bold" id="task-title">
                 Integrate OpenAI API
               </h3>
-              <p class="text-gray-500 p-4 bg-white rounded-xl">
+              <p
+                class="text-gray-500 text-sm lg:text-base p-2 lg:p-4 bg-white rounded-xl"
+              >
                 Debug using Chrome DevTools, check for overlapping elements, and
                 ensure onClick works properly and ensure onClick works properly
               </p>
               <div class="flex justify-between items-center gap-4 w-full">
                 <div class="">
-                  <p>Deadline</p>
-                  <p class="font-medium">21 March 2025</p>
+                  <p class="text-sm lg:text-base">Deadline</p>
+                  <p class="font-medium text-sm lg:text-base">21 March 2025</p>
                 </div>
                 <div>
                   <button
-                    class="bg-blue-500 px-2 py-1 rounded-xl text-white collect-btn"
+                    class="bg-blue-500 px-2 py-1 rounded-xl text-white collect-btn text-sm lg:text-base"
                   >
                     Completed
                   </button>
@@ -218,23 +263,29 @@
             <div
               class="bg-gray-100 p-4 rounded-xl flex flex-col gap-4 items-start justify-center"
             >
-              <button class="bg-white px-4 py-2 rounded-xl">Glassdoar</button>
+              <button
+                class="bg-white font-medium px-2 py-1 lg:px-4 lg:py-2 rounded-xl"
+              >
+                Glassdoar
+              </button>
 
-              <h3 class="text-2xl font-bold" id="task-title">
+              <h3 class="text-lg lg:text-2xl font-bold" id="task-title">
                 Improve Job searching
               </h3>
-              <p class="text-gray-500 p-4 bg-white rounded-xl">
+              <p
+                class="text-gray-500 text-sm lg:text-base p-2 lg:p-4 bg-white rounded-xl"
+              >
                 Debug using Chrome DevTools, check for overlapping elements, and
                 ensure onClick works properly and ensure onClick works properly
               </p>
               <div class="flex justify-between items-center gap-4 w-full">
                 <div class="">
-                  <p>Deadline</p>
-                  <p class="font-medium">21 March 2025</p>
+                  <p class="text-sm lg:text-base">Deadline</p>
+                  <p class="font-medium text-sm lg:text-base">21 March 2025</p>
                 </div>
                 <div>
                   <button
-                    class="bg-blue-500 px-2 py-1 rounded-xl text-white collect-btn"
+                    class="bg-blue-500 px-2 py-1 rounded-xl text-white collect-btn text-sm lg:text-base"
                   >
                     Completed
                   </button>
@@ -243,20 +294,20 @@
             </div>
           </section>
         </section>
-        <section class="col-span-2 p-2 bg-white rounded-xl">
+        <section class="col-span-3 lg:col-span-2 p-2 bg-white rounded-xl">
           <div
-            class="flex flex-col items-center justify-center gap-4 p-4 border-b-2 border-gray-200"
+            class="flex flex-col items-center justify-center gap-4 border-b-2 border-gray-200 py-4"
           >
             <div class="flex items-center justify-center gap-4">
               <figure>
                 <img src="./assets/activity.png" alt="activity" />
               </figure>
-              <p>Activity Log</p>
+              <p class="text-sm lg:text-base">Activity Log</p>
             </div>
             <div class="">
               <button
                 id="clear-history"
-                class="bg-blue-700 px-4 py-1 rounded-xl text-white"
+                class="bg-blue-700 text-sm lg:text-base px-2 py-1 lg:px-4 lg:py-2 rounded-xl text-white"
               >
                 Clear History
               </button>

@@ -35,7 +35,7 @@ for (let i = 0; i < collectBtn.length; i++) {
     newActivity.innerText = `You have Complete The Task ${taskTitle} at ${new Date().toLocaleTimeString()}`;
     activity.appendChild(newActivity);
     if (task.innerText == 0) {
-      alert("Congrats ! You have completed all the task for today");
+      alert("Congrats !!! You have completed all the current task");
     }
   });
 }

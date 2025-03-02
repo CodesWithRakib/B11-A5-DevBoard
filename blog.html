@@ -13,19 +13,21 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-gray-100 max-w-screen-2xl mx-auto pb-2">
-    <header class="py-4 w-11/12 mx-auto">
+    <header class="w-11/12 mx-auto sticky top-0 z-10 bg-white">
       <nav
-        class="bg-white flex justify-between items-center px-6 py-4 rounded-xl"
+        class="bg-white flex justify-between items-center px-3 py-2 lg:px-6 lg:py-4 rounded-xl"
       >
         <div class="flex items-center gap-2">
           <figure>
             <img src="./assets/logo.png" alt="logo" class="w-full" />
           </figure>
-          <h3 class="text-4xl">Dev<span class="font-extrabold">Board</span></h3>
+          <h3 class="text-xl lg:text-4xl">
+            Dev<span class="font-extrabold">Board</span>
+          </h3>
         </div>
         <div class="">
           <button
-            class="bg-blue-500 px-4 py-2 rounded-xl text-white font-semibold"
+            class="bg-blue-500 px-2 py-1 lg:px-4 lg:py-2 rounded-xl text-white font-semibold"
             id="backToDesk"
           >
             Back to desk
@@ -34,15 +36,17 @@
       </nav>
     </header>
     <main class="w-11/12 mx-auto my-8">
-      <h1 class="text-center text-4xl font-bold mb-5">Blogs</h1>
+      <h1 class="text-center text-xl lg:text-4xl font-bold mb-5">Blogs</h1>
       <section>
         <div class="m-2">
-          <p class="text-2xl bg-white p-4 rounded-xl shadow-lg font-medium">
+          <p
+            class="text-base lg:text-2xl bg-white p-4 rounded-xl shadow-lg font-medium"
+          >
             Question-1: What are the different ways to select an element in the
             DOM?
           </p>
           <div class="bg-white p-4 rounded-xl shadow-lg mt-2">
-            <p class="text-lg mt-2 text-[#495057] font-medium">
+            <p class="text-base lg:text-lg mt-2 text-[#495057] font-medium">
               There are several ways to select elements in the DOM using
               Javascript . Some of the most common ways are:
             </p>
@@ -57,7 +61,9 @@
           </div>
         </div>
         <div class="m-2">
-          <p class="text-2xl bg-white p-4 rounded-xl shadow-lg font-medium">
+          <p
+            class="text-base lg:text-2xl bg-white p-4 rounded-xl shadow-lg font-medium"
+          >
             Question-2: What is the difference between innerHTML, innerText, and
             textContent ?
           </p>
@@ -69,22 +75,24 @@
 
             <ul class="ml-8 text-[#868e96]">
               <li>
-                innerHTML: It returns the HTML content (inner HTML) of an
-                element.
+                <b> 1. innerHTML:</b> It returns the HTML content (inner HTML)
+                of an element.
               </li>
               <li>
-                innerText: It returns the text content of the specified node,
-                and all its descendants.
+                <b> 2. innerText:</b> It returns the text content of the
+                specified node, and all its descendants.
               </li>
               <li>
-                textContent: It returns the text content of the specified node,
-                and all its descendants.
+                <b>3. textContent:</b> It returns the text content of the
+                specified node, and all its descendants.
               </li>
             </ul>
           </div>
         </div>
         <div class="m-2">
-          <p class="text-2xl bg-white p-4 rounded-xl shadow-lg font-medium">
+          <p
+            class="text-base lg:text-2xl bg-white p-4 rounded-xl shadow-lg font-medium"
+          >
             Question-3: What is event delegation in the DOM?
           </p>
           <div class="bg-white p-4 rounded-xl shadow-lg mt-2">
@@ -97,7 +105,9 @@
           </div>
         </div>
         <div class="m-2">
-          <p class="text-2xl bg-white p-4 rounded-xl shadow-lg font-medium">
+          <p
+            class="text-base lg:text-2xl bg-white p-4 rounded-xl shadow-lg font-medium"
+          >
             Question-4: What is event bubbling in the DOM?
           </p>
           <div class="bg-white p-4 rounded-xl shadow-lg mt-2">
@@ -111,7 +121,9 @@
           </div>
         </div>
         <div class="m-2">
-          <p class="text-2xl bg-white p-4 rounded-xl shadow-lg font-medium">
+          <p
+            class="text-base lg:text-2xl bg-white p-4 rounded-xl shadow-lg font-medium"
+          >
             Question-5: How do you create, add, and remove elements using
             JavaScript?
           </p>
